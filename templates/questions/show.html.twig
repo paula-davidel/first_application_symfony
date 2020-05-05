@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Question # {{ id_question }} {% endblock %}
+
+{% block body %}
+<h1>
+    You chose the question by the id : {{ id_question }}
+</h1>
+{# I'm just a comment hidding here #}
+<div>
+    Eventually, we'll print the full question here!
+</div>
+
+<h2>
+    Answer {# ahow the number of answers#} ( {{ answers|length }} )
+</h2>
+    <br>
+    <ul>
+    {% for answer in answers %}
+        <li>{{ answer }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

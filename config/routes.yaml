@@ -1,0 +1,11 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+#question:
+#    path: /questions
+#    controller: App\Controller\QuestionController::questions
+
+#homepage
+#    path: /
+#    controller: App\Controller\IndexController::home
